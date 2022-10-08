@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 1 </title>
+</head>
+
+<body>
+    <script>
+        //declaro variables para que arrays no tire error
+        var verdadero;
+        var char;
+        
+        //declaro 2 arrays para guardar los tipos de elementos para su uso posterior
+        var valores_string = [];
+        var valores_number = [];
+        //cargo arrays
+        var valores = [verdadero, false, 2, "hola",
+            "mundo", 3, char];
+        
+        //recorro el arrays para buscar y separar los tipos de valores en nuevos arrays    
+        for (let i = 0; i < valores.length; i++) {
+            // la funcion "typeof" te devuelve el tipo de dato     
+            if (typeof valores[i] == 'string') {
+                //la funcion "push" inserta valores a los arrays
+                valores_string.push(valores[i]);
+            } else if (typeof valores[i] == 'number') {
+                valores_number.push(valores[i]);
+
+            }
+
+        }
+        //la funcion "sort" ordena los valores del arrays de menor a mayor
+        valores_string.sort();
+        console.log("STRING CON MAYOR LONGITUD: ", valores_string[(valores_string.length - 1)]);
+        console.log("CONTENIDOS DE LOS STRING DE MENOR A MAYOR:");
+
+        //recorro el arrays string e imprimo los valores de menor a mayor
+        for (let h = 0; h < valores_string.length; h++) {
+
+            console.log(valores_string[h]);
+
+        }
+        //operaciones con los valores numericos de arrays 
+        console.log("OPERACIONES CON LOS VALORES NUMERICOS:");
+        console.log("SUMAR",valores_number[0],"+",valores_number[1],"=",valores_number[0] + valores_number[1]);
+        console.log("RESTAR",valores_number[0],"-",valores_number[1],"=",valores_number[0] - valores_number[1]);
+        console.log("MULTIPLICAR",valores_number[0],"X",valores_number[1],"=",valores_number[0] * valores_number[1]);
+        console.log("DIVIDIR",valores_number[0],"/",valores_number[1],"=",valores_number[0] / valores_number[1]);
+    </script>
+</body>
+
+</html>
