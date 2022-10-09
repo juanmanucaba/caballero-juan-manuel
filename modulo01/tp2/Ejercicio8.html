@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 8 </title>
+</head>
+
+<body>
+    <script>
+        // declaracion variables
+        let num_alea, cant_numeros = 100;
+        let vec_aleatorio = [];
+
+        //Ingreso tecla para empezar el programa"
+        window.prompt("precione tecla para generar 100 numeros aleatorios", "...");
+
+        function generar_aleatorio() {
+           // bucle while: se ejecuta hasta llegar al total de numeros solicitados
+            while (vec_aleatorio.length < cant_numeros) {
+                
+                // var "num_alea" se guarda el numero generado aleatorio x la funcion
+                // Math.floor(Math.random() * cant_numeros)
+                num_alea = Math.floor(Math.random() * cant_numeros);
+                
+                // var "existe" se guarda valor boolean, si iniciliaza en false si encuentra
+                // un valor repetido lo su valor se vuleve true y genera otro valor
+                var existe = false;
+
+                for (i = 0; i < vec_aleatorio.length; i++) {
+                    //console.log(vec_aleatorio[i] + " " + num_alea);
+                    if (vec_aleatorio[i] == num_alea) {
+                        existe = true;
+                        break;
+                    }
+                }
+                if (!existe) {
+                    vec_aleatorio[i] = num_alea;
+                }
+            }
+        }
+
+        generar_aleatorio();
+        //imprime los numeros generados en un vector que se creo en la funcion     
+        document.write(vec_aleatorio);
+        //document.writeln('<br>');
+
+    </script>
+</body>
+
+</html>

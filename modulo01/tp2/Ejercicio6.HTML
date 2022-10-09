@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 6 </title>
+</head>
+
+<body>
+    <script>
+        // declaracion variables
+        let long_string;
+        //Ingreso la cadena x teclado"
+        dato_recibido = window.prompt("Introduce palabra ", "...");
+        long_string = dato_recibido.length;
+
+        for (i = 0; i < long_string; i++) {
+            console.log("la palabra es: "+dato_recibido);
+            if (dato_recibido.charAt(i) == "a" ^ dato_recibido.charAt(i) == "A") {
+                console.log("la primera vocal es '" + dato_recibido.charAt(i) + "'");
+                console.log ("la posicion letra es "+ (i+1));
+                i=long_string;
+
+            } else if (dato_recibido.charAt(i) == "e" ^ dato_recibido.charAt(i) == "E") {
+                console.log("la primera vocal es '" + dato_recibido.charAt(i) + "'")
+                console.log ("la posicion letra es "+ (i+1));
+                i=long_string;
+
+            } else if (dato_recibido.charAt(i) == "i" ^ dato_recibido.charAt(i) == "I") {
+                console.log("la primera vocal es '" + dato_recibido.charAt(i) + "'")
+                console.log ("la posicion letra es "+ (i+1));
+                i=long_string;
+
+            } else if (dato_recibido.charAt(i) == "o" ^ dato_recibido.charAt(i) == "O") {
+                console.log("la primera vocal es '" + dato_recibido.charAt(i) + "'")
+                console.log ("la posicion letra es "+ (i+1));
+                i=long_string;
+            
+            } else if (dato_recibido.charAt(i) == "u" ^ dato_recibido.charAt(i) == "U") {
+                console.log("la primera vocal es '" + dato_recibido.charAt(i) + "'")
+                console.log ("la posicion letra es "+ (i+1));
+                i=long_string;
+
+            }
+        }
+
+       
+
+    </script>
+</body>
+
+</html>

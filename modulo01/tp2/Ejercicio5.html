@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 5 </title>
+</head>
+
+<body>
+    <script>
+        // declaracion variables
+        let mayu, minu;
+        //Ingreso la cadena x teclado"
+        dato_recibido = window.prompt("Introduce la cadena ", "...");
+
+        // en la funcion paso lo recibido a mayusculas en mayu y paso en minusculas en minu
+        //para luego comparar
+        function comparar_string(dato_recibido) {
+           
+            minu = (dato_recibido.toLowerCase());
+            mayu = (dato_recibido.toUpperCase());
+            console.log("El carácter en el índice 0 es '" + mayu.charAt(0) + "'")
+
+            if (minu == dato_recibido) {
+                console.log("la cadena esta formada solo con minusculas");
+            } else if (mayu == dato_recibido) {
+                console.log("la cadena esta formada solo con mayusculas");
+            } else {
+                console.log("la cadena esta formada con mayusculas y minusculas");
+            }
+                        
+        }
+        comparar_string(dato_recibido);
+        
+    </script>
+</body>
+
+</html>

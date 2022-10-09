@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 9 </title>
+</head>
+
+<body>
+    <script>
+        // declaracion variables
+        let suma = 0, nota = 0, promedio = 0, cont = 0;
+        do {
+
+            //Ingreso de notas x teclado"
+            val1 = window.prompt("Ingrese nota / 0 (cero) para terminar", "...");
+            nota = parseInt(val1);
+            //verificacion de nota valida
+            if (nota > 0 && nota < 11) {
+                suma = suma + nota;
+                cont++;
+            }else if(nota != 0) {
+               alert("notas validas del 1 al 10");//alerta si el valor de nota es incorrecto
+            }
+
+        } while (nota != 0);// 0 (cero) para terminar
+        
+        //funcion que analiza calificacion
+        function calificacion(x) {
+            if (x < 5) {
+                document.write(" REPROBADO ");
+            } else if (x >= 6 && x <= 8) {
+                document.write(" APROBO ");
+            } else if (x > 8 && x < 11) {
+                document.write(" SOBRESALIENTE ");
+            }
+
+        }
+
+        promedio = suma / cont;
+        document.write("El promedio del alumno es: " + (promedio) + " ... ");// impresion del promedio
+        calificacion(promedio);// llamar funcion calificacion
+
+    </script>
+</body>
+
+</html>

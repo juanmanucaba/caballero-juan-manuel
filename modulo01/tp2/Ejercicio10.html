@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 10 </title>
+</head>
+
+<body>
+    <script>
+        // declaracion variables
+        let mes, anio;
+
+
+        //Ingreso mes y año a consultar"
+        val1 = window.prompt("ingrese el mes", "...");
+        val2 = window.prompt("ingrese el año", "...");
+        mes = parseInt(val1);
+        anio = parseInt(val2);
+
+        function diasEnUnMes(anio, mes) {
+            return new Date(anio, mes, 0).getDate();//esta funcion retorna directamente los dias
+        }
+        document.write("la fecha de consulta es: Mes "+ mes +" del año "+ anio + "  ");
+        document.writeln('<br>');
+        document.write(" Tiene " + diasEnUnMes(anio, mes) + " dias");
+    </script>
+</body>
+
+</html>

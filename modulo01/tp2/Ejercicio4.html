@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 4 </title>
+</head>
+
+<body>
+    <script>
+        // declaracion variables
+        var num1, resultado;
+        //Ingreso de valores x teclado"
+        val1 = window.prompt("Introduce numero", "...");
+        num1 = parseInt(val1);
+
+        function conv_string(num1) {
+
+            if ((num1 % 2) == 0) {
+                resultado = "el numero ingresado es par";
+            } else {
+                resultado = "el numero ingresado es impar";
+            }
+
+            return (resultado);
+        }
+        conv_string(num1);
+        document.write(resultado);
+    </script>
+</body>
+
+</html>

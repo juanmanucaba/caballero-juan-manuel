@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 7 </title>
+</head>
+
+<body>
+    <script>
+        // declaracion variables
+        let resultado;
+        //Ingreso la cadena x teclado"
+        dato_recibido = window.prompt("Introduce palabra ", "...");
+        
+        
+        function invertirCadena(cad) {
+            // Paso 1. Usa el método split() para devolver la cadena a un nuevo arrays
+            var separarCadena = cad.split(""); 
+            
+            // Paso 2. Usa el método reverse() para invertir el nuevo arrays creado
+            var invertirArreglo = separarCadena.reverse();             
+
+            // Paso 3. Usa el método join() para unir todos los elementos del arrays en una cadena
+            resultado = invertirArreglo.join(""); 
+            
+            //Paso 4. Devolver la cadena invertida
+            return resultado; 
+        }
+
+        invertirCadena(dato_recibido);
+        console.log("la cedena es: " + dato_recibido);
+        console.log("cadena invertida es: "+ resultado);
+
+
+    </script>
+</body>
+
+</html>
