@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Ejercicio 10 </title>
+</head>
+
+<body>
+    <script>
+        //cargo arrays
+        var meses = ["Enero", "Febrero", "Marzo", "Abril", "Mayo", "Junio",
+            "Julio", "Agosto", "Septiembre", "Octubre", "Noviembre", "Diciembre"];
+
+        // ingresar el nuemro del mes a imprimir
+        var numes = window.prompt("el numero del mes: ", "");
+
+        //imprimo x navegador el mes elegido "la funcion parseint saca el entero de 
+        //la variable numes para poder operar y descontar 1 indice del arrays"
+        document.writeln(meses[(parseInt(numes) - 1)]);
+
+    </script>
+</body>
+
+</html>
